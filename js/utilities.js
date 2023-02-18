@@ -30,7 +30,8 @@ function getInputElementValueById(inputElementId) {
 function getMultiplyNumbers(value1, value2) {
     let totalOfMultiply = 0.5 * (value1 * value2);
     let totalOfMultiplyFloat = parseFloat(totalOfMultiply);
-    return Math.round(totalOfMultiplyFloat * 100 / 100);
+    let totalOfMultiplyFixed = totalOfMultiplyFloat.toFixed(2);
+    return totalOfMultiplyFixed;
 }
 
 
