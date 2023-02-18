@@ -10,7 +10,10 @@ document.getElementById('first-shap-btn').addEventListener('click', function(){
 
     // set value in result 
     setNewElementToResult(textElementValue, total);
+    
 })
+
+
 
 
 // second shap/Rectangle script 
@@ -69,5 +72,38 @@ document.getElementById('blog-page-btn').addEventListener('click', function(){
     window.location.href = 'blog.html'
 })
 
+
+// random code genarotr
+
+
+// // first div 
+document.getElementById('first-div').addEventListener('mouseenter', function(){
+    random_bg_color('first-div');
+})
+
+
+// second div 
+document.getElementById('second-div').addEventListener('mouseenter', function(){
+    random_bg_color('second-div');
+})
+
+// third div 
+document.getElementById('third-div').addEventListener('mouseenter', function(){
+    random_bg_color('third-div');
+})
+
+// fourth div 
+document.getElementById('fourth-div').addEventListener('mouseenter', function(){
+    random_bg_color('fourth-div');
+})
+
+// fifth div 
+document.getElementById('fifth-div').addEventListener('mouseenter', function(){
+    random_bg_color('fifth-div');
+})
+// fifth div 
+document.getElementById('sixth-div').addEventListener('mouseenter', function(){
+    random_bg_color('sixth-div');
+})
 
 

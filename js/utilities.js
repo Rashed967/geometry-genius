@@ -36,3 +36,17 @@ function setNewElementToResult(value1, value2) {
 }
 
 
+// random backgrund color generate 
+
+    function random_bg_color(elementId) {
+        var x = Math.floor(Math.random() * 256);
+        var y = Math.floor(Math.random() * 256);
+        var z = Math.floor(Math.random() * 256);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        const element = document.getElementById(elementId);
+        element.style.background = bgColor;
+        }
+
+
+
+
