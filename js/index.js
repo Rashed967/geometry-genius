@@ -14,8 +14,6 @@ document.getElementById('first-shap-btn').addEventListener('click', function(){
 })
 
 
-
-
 // second shap/Rectangle script 
 
 document.getElementById('second-shap-btn').addEventListener('click', function(){

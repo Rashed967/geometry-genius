@@ -11,14 +11,26 @@ function getInputElementValueById(inputElementId) {
     const elementValueString = element.value;
 
     // validate function 
+    if (elementValueString === '' || isNaN(elementValueString)) {
+        alert('Please, enter a number');
+        
+        if(elementValueString < 1){
+            alert('Please, enter a even number');
+        }
+    } 
+    else{
         const elementValue = parseFloat(elementValueString);
         return elementValue;
+    }
+    return elementValue;
+
 }
 
 // function for multiply 2 input field value 
 function getMultiplyNumbers(value1, value2) {
     let totalOfMultiply = 0.5 * (value1 * value2);
-    return parseFloat(totalOfMultiply);
+    let totalOfMultiplyFloat = parseFloat(totalOfMultiply);
+    return Math.round(totalOfMultiplyFloat * 100 / 100);
 }
 
 
@@ -38,14 +50,14 @@ function setNewElementToResult(value1, value2) {
 
 // random backgrund color generate 
 
-    function random_bg_color(elementId) {
-        var x = Math.floor(Math.random() * 256);
-        var y = Math.floor(Math.random() * 256);
-        var z = Math.floor(Math.random() * 256);
-        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-        const element = document.getElementById(elementId);
-        element.style.background = bgColor;
-        }
+function random_bg_color(elementId) {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    const element = document.getElementById(elementId);
+    element.style.background = bgColor;
+}
 
 
 
