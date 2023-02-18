@@ -1,36 +1,29 @@
 // function for get text element value 
-function getTextElementValueById(TextElementId){
+function getTextElementValueById(TextElementId) {
     const element = document.getElementById(TextElementId);
     const elementValue = element.innerText;
     return elementValue;
 }
 
 // function for get input field value 
-function getInputElementValueById(inputElementId){
+function getInputElementValueById(inputElementId) {
     const element = document.getElementById(inputElementId);
     const elementValueString = element.value;
-    
+
     // validate function 
-    if(typeof elementValueString === 'number' && elementValueString > 0){
         const elementValue = parseFloat(elementValueString);
-        return elementValue;    
-    }
-    else{
-        alert('invalid numbera');
-        return;
-    }
-    
+        return elementValue;
 }
 
 // function for multiply 2 input field value 
-function getMultiplyNumbers(value1, value2){
-    let totalOfMultiply = 0.5 * (value1 * value2); 
+function getMultiplyNumbers(value1, value2) {
+    let totalOfMultiply = 0.5 * (value1 * value2);
     return parseFloat(totalOfMultiply);
 }
 
 
 // fucntion for set a new element/list to result area  
-function setNewElementToResult(value1, value2){
+function setNewElementToResult(value1, value2) {
     const li = document.createElement('li');
     li.innerHTML = `
     <div class="w-11/12 inline-flex justify-between">
