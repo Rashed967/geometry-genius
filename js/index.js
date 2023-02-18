@@ -65,5 +65,9 @@ document.getElementById('fifth-shap-btn').addEventListener('click', function(){
     setNewElementToResult(textElementValue, total);
 })
 
+document.getElementById('blog-page-btn').addEventListener('click', function(){
+    window.location.href = 'blog.html'
+})
+
 
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container mx-auto p-5 mt-4 bg-slate-200">
+        <h1 class="text-center text-2xl font-semibold ">Blog Page</h1>
+    </header>
+
+    <!-- man content part start  -->
+    <main>
+        <section class="container  mx-auto mt-7 bg-cyan-300 p-5 sm:grid grid-cols-2 gap-4">
+            <div>
+                <h2 class="text-xl text-white font-semibold mb-3">What is DOM and what is the purpose of DOM?</h2>
+                <p>DOM means Document Object Model. DOM is a programming interface that allows us to create, change, or remove elements from the html document. And we can add events to these elements to make our page more dynamic and unique. And one thing that The DOM views an HTML document as a tree of nodes. </p>
+            </div>
+           
+            <div>
+                <h2 class="text-xl text-white font-semibold mb-3">How will you select HTML elements using DOM? Name the DOM methods.</h2>
+                <p>using JavaScript. There are 5 ways in which you can select elements in a DOM using selectors.
+                </p>
+                <ul class="list-decimal list-inside mt-2">
+                    <li>getElementsByTagName()</li>
+                    <li>getElementsByClassName()</li>
+                    <li>getElementById()</li>
+                    <li>querySelector()</li>
+                    <li>querySelectorAll() </li>
+                    
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-xl text-white font-semibold mb-3">What is event bubble?</h2>
+                <p>The Event bubbling in JavaScript is a type of event propagation. The event triggers the innermost target element and consecutively triggers the parent element of the target element in the same hierarchy until it triggers the outermost element. </p>
+            </div>
+
+            <div>
+                <h2 class="text-xl text-white font-semibold mb-3">What is a callback function and why will you use it?</h2>
+                <p>A callback is a function that waits for another function to finish executing before executing itself. It gives us the ability to enforce an order of operations to our JavaScript code. </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
